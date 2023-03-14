@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2"
+    android:background="@color/teal_200">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete su solicitud"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        android:scaleType="centerCrop"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/teal_700"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/dog_1"/>
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Nombre: Tobi \nEdad: 5 Años"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Nombre"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Telefono"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:maxLines="5"
+        android:lines="5"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Introducir razón por la que quiere adoptar" />
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="enviar"/>
+
+</LinearLayout>
